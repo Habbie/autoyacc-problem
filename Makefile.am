@@ -3,8 +3,8 @@ AUTOMAKE_OPTIONS = foreign
 bin_PROGRAMS=mybin
 
 AM_YFLAGS=-d
-BUILT_SOURCES=parser.cc
-mybin_SOURCES=parser.yy mybin.cc
+BUILT_SOURCES=parser.cc parser.h
+mybin_SOURCES=parser.yy mybin.cc parser.h
 
-.h.hh:
+.hh.h:
 	cp $< $@
